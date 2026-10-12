@@ -1,0 +1,95 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox en CSS</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        .caja {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 5px;
+            border: 2px solid black;
+        }
+
+        .contenedor {
+            display: flex;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flexbox en CSS</h1>
+
+    <h2>¿Qué es Flexbox?</h2>
+
+    <p>
+        Flexbox es una forma de acomodar elementos en una página web.
+        Permite colocar las cajas en filas o columnas y cambiar
+        la posición de los elementos.
+    </p>
+
+    <h2>Ejemplo 1: Cajas en una fila</h2>
+
+    <div class="contenedor">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+    </div>
+
+    <h2>Ejemplo 2: Cajas en columna</h2>
+
+    <div class="contenedor" style="flex-direction: column;">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+    </div>
+
+    <h2>Ejemplo 3: Cajas centradas</h2>
+
+    <div class="contenedor" style="justify-content: center;">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+    </div>
+
+    <h2>Ejemplo 4: Espacio entre cajas</h2>
+
+    <div class="contenedor" style="justify-content: space-between;">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+    </div>
+
+    <h2>Ejemplo 5: Cajas al final</h2>
+
+    <div class="contenedor" style="justify-content: flex-end;">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+    </div>
+
+    <h2>Video de explicación</h2>
+
+<video width="400" controls>
+    <source src="videos/video7.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+</video>
+    <p>
+        <a href="index.html">Regresar al menú</a>
+    </p>
+
+</body>
+</html>

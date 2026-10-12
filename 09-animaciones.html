@@ -1,0 +1,132 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Animaciones en CSS</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        div {
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px;
+            width: 150px;
+        }
+
+        @keyframes cambiar {
+            from {
+                background-color: lightblue;
+            }
+
+            to {
+                background-color: red;
+            }
+        }
+
+        @keyframes mover {
+            from {
+                margin-left: 20px;
+            }
+
+            to {
+                margin-left: 100px;
+            }
+        }
+
+        @keyframes girar {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes crecer {
+            from {
+                width: 100px;
+            }
+
+            to {
+                width: 200px;
+            }
+        }
+
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Animaciones en CSS</h1>
+
+    <h2>¿Qué son las animaciones?</h2>
+
+    <p>
+        Las animaciones en CSS sirven para dar movimiento
+        a los elementos de una página web. Podemos cambiar
+        colores, tamaños, posiciones y otras propiedades.
+    </p>
+
+    <h2>Ejemplo 1: Cambiar color</h2>
+
+    <div style="animation: cambiar 2s infinite alternate;">
+        Cambia de color
+    </div>
+
+    <h2>Ejemplo 2: Mover una caja</h2>
+
+    <div style="animation: mover 2s infinite alternate;">
+        Esta caja se mueve
+    </div>
+
+    <h2>Ejemplo 3: Girar una caja</h2>
+
+    <div style="animation: girar 3s infinite linear;">
+        Esta caja gira
+    </div>
+
+    <h2>Ejemplo 4: Cambiar tamaño</h2>
+
+    <div style="animation: crecer 2s infinite alternate;">
+        Esta caja crece
+    </div>
+
+    <h2>Ejemplo 5: Aparecer</h2>
+
+    <div style="animation: aparecer 3s infinite alternate;">
+        Esta caja aparece
+    </div>
+
+    <h2>Video de explicación</h2>
+
+    <video width="400" controls>
+    <source src="videos/video9.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+</video>
+
+    <p>
+        <a href="index.html">Regresar al menú</a>
+    </p>
+
+</body>
+</html>
+```

@@ -1,0 +1,91 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Posicionamiento en CSS</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        div {
+            background-color: lightblue;
+            padding: 15px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Posicionamiento en CSS</h1>
+
+    <h2>¿Qué es el posicionamiento?</h2>
+
+    <p>
+        El posicionamiento en CSS sirve para colocar
+        los elementos en diferentes lugares de una página web.
+        Algunos tipos son static, relative, absolute y fixed.
+    </p>
+
+    <h2>Ejemplo 1: Static</h2>
+
+    <div style="position: static;">
+        Esta caja tiene la posición normal.
+    </div>
+
+    <h2>Ejemplo 2: Relative</h2>
+
+    <div style="position: relative; left: 30px;">
+        Esta caja se mueve un poco hacia la derecha.
+    </div>
+
+    <h2>Ejemplo 3: Absolute</h2>
+
+    <div style="position: relative; height: 80px;">
+        <div style="position: absolute; top: 10px; right: 10px; margin: 0;">
+            Caja colocada a la derecha.
+        </div>
+    </div>
+
+    <h2>Ejemplo 4: Fixed</h2>
+
+    <div style="position: fixed; bottom: 10px; right: 10px; background-color: yellow;">
+        Caja fija en la pantalla.
+    </div>
+
+    <h2>Ejemplo 5: Sticky</h2>
+
+    <div style="position: sticky; top: 0; background-color: lightgreen;">
+        Esta caja puede quedarse arriba al desplazarse.
+    </div>
+
+    <p>
+        Baja por la página para probar el posicionamiento.
+    </p>
+
+    <p>Practicando CSS podemos cambiar la posición de las cajas.</p>
+    <p>Este es otro texto para probar el desplazamiento.</p>
+    <p>Este es otro texto de ejemplo.</p>
+    <p>Este es el último texto de la práctica.</p>
+
+    <h2>Video de explicación</h2>
+
+    <video width="400" controls>
+    <source src="videos/video6.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+</video>
+    <p>
+        <a href="index.html">Regresar al menú</a>
+    </p>
+
+</body>
+</html>
+```

@@ -1,0 +1,103 @@
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid en CSS</title>
+
+    <style>
+        body {
+            background-color: lightgray;
+        }
+
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        .contenedor {
+            display: grid;
+            grid-template-columns: auto auto;
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        .caja {
+            background-color: lightblue;
+            border: 2px solid black;
+            padding: 20px;
+            margin: 5px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Grid en CSS</h1>
+
+    <h2>¿Qué es Grid?</h2>
+
+    <p>
+        Grid es una herramienta de CSS que sirve para acomodar
+        elementos en filas y columnas. Ayuda a organizar
+        el contenido de una página web.
+    </p>
+
+    <h2>Ejemplo 1: Dos columnas</h2>
+
+    <div class="contenedor">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+        <div class="caja">Caja 4</div>
+    </div>
+
+    <h2>Ejemplo 2: Tres columnas</h2>
+
+    <div class="contenedor" style="grid-template-columns: auto auto auto;">
+        <div class="caja">Uno</div>
+        <div class="caja">Dos</div>
+        <div class="caja">Tres</div>
+    </div>
+
+    <h2>Ejemplo 3: Una columna</h2>
+
+    <div class="contenedor" style="grid-template-columns: auto;">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+    </div>
+
+    <h2>Ejemplo 4: Cuatro columnas</h2>
+
+    <div class="contenedor" style="grid-template-columns: auto auto auto auto;">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+        <div class="caja">3</div>
+        <div class="caja">4</div>
+    </div>
+
+    <h2>Ejemplo 5: Espacio entre columnas</h2>
+
+    <div class="contenedor" style="column-gap: 20px;">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2</div>
+        <div class="caja">Caja 3</div>
+        <div class="caja">Caja 4</div>
+    </div>
+
+    <h2>Video de explicación</h2>
+
+    <video width="400" controls>
+    <source src="videos/video8.mp4" type="video/mp4">
+    Tu navegador no puede reproducir este video.
+</video>
+    <p>
+        <a href="index.html">Regresar al menú</a>
+    </p>
+
+</body>
+</html>
+```
